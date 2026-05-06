@@ -1,1 +1,17 @@
+# Example spectra. 
 
+This folder contains .mp4 files showing the redshift evolution of example AGN spectrum templates, as described in Section 3.1.2 (equations 2 and 3) of McDonald+2026 (https://arxiv.org/abs/2602.02484).
+
+The naming conventions of each file indicate if the spectrum is convolved with the effective area (Aeff) of a given telescope, how the spectrum was normalised and the assumed intrinsic column density.
+  Aeff (effective area): 
+      AeffNone,     a constant effective area of 1 cm^2 is assumed. i.e. Aeff(E keV)= 1 cm^2
+      AeffROSAT,    the spectrum is convolved with the (on-axis) ROSAT response function. 
+      AeffeROSITA,  the spectrum is convolved with the effective area of eROSITA given by the survey-averaged eROSITA auxiliary response files of telescope module 8. 
+  
+  Normalisation: 
+      FxConst,      the template is normalised such that the prime AGN spectrum (i.e. the spectrum from the AGN without absorption, reflection or scattering) produces a constant observed flux of 1 erg/s/cm^2
+      LxConst,      the normalisation constant of the powerlaw of the prime AGN spectrum = 1 (i.e. A_pl=1 in equation 3 of McDonald+2026)
+  
+  Intrinsic column density:
+      The log base 10 value of the assumed intrinisic column density is indicated by the number following nH. i.e. nH23 implies an assumed intrinsic column density of 10^(23) cm^-2
+    
